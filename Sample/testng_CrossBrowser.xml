@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests"  thread-count ="2">
+  <test name="TestChrome">
+  <parameter name="browser" value ="chrome"/>
+    <classes>
+      <class name="com.crm.Opportunity.Tc_42_AdvanceSearchSmoke"/>
+      <class name="com.crm.Opportunity.Tc_45_AdvanceSearchRegional"/>
+      <class name="com.crm.Opportunity.Tc_41_AdvanceSearchRegression"/>
+      <class name="com.crm.Opportunity.Tc_43_AdvanceSearchRegression"/>
+      <class name="com.crm.Opportunity.Tc_44_AdvanceSearchSmoke"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="TestFirefox">
+  <parameter name="browser" value ="firefox"/>
+    <classes>
+      <class name="com.crm.Opportunity.Tc_42_AdvanceSearchSmoke"/>
+      <class name="com.crm.Opportunity.Tc_45_AdvanceSearchRegional"/>
+      <class name="com.crm.Opportunity.Tc_41_AdvanceSearchRegression"/>
+      <class name="com.crm.Opportunity.Tc_43_AdvanceSearchRegression"/>
+      <class name="com.crm.Opportunity.Tc_44_AdvanceSearchSmoke"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
